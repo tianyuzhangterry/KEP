@@ -59,15 +59,18 @@ We recommend using `conda` for environment management.
 ```bash
 conda create -n keplatform python=3.10
 conda activate keplatform
+```
 
 ### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Install Core Libraries
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install transformers datasets accelerate
+```
 
 ## 📦 Installation
 
@@ -75,14 +78,11 @@ pip install transformers datasets accelerate
 git clone https://github.com/yourname/KnowledgeEditPlatform.git
 cd KnowledgeEditPlatform
 pip install -e .
+```
 
 
 
 
-
-# 🧠 Task Definition
-
-```markdown
 ## 🧠 Task Definition
 
 Given a pretrained model $f_\theta$, knowledge editing aims to modify its behavior on specific edit pairs $(x_e, y_e)$:
@@ -117,8 +117,9 @@ We adopt a unified evaluation protocol:
     "locality": 0.97
   }
 }
+```
 
 # 📊 Visualization
 
 Example：
-<img width="1034" height="570" alt="image" src="https://github.com/user-attachments/assets/eef4dff4-5184-4af9-be31-385d3dea1235" />
+![Framework](assets/framework.png)
