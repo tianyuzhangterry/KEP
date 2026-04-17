@@ -59,6 +59,7 @@ We recommend using `conda` for environment management.
 ```bash
 conda create -n keplatform python=3.10
 conda activate keplatform
+```bash
 
 ### 2. Install Dependencies
 pip install -r requirements.txt
