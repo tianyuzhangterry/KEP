@@ -94,9 +94,14 @@ while preserving performance on unrelated inputs.
 
 ### Editing Settings
 
-- **Single Editing**: apply one edit independently  
-- **Batch Editing**: apply multiple edits simultaneously  
-- **Sequential Editing**: continuous updates on the same model 
+- **Instance-level Single Editing**  
+  Apply a single edit instance independently to the model.
+
+- **Instance-level Sequential Editing**  
+  Apply multiple edit instances sequentially, where each edit is performed on the model updated by previous edits.
+
+- **Batch-level Sequential Editing**  
+  Apply a batch of edits in a structured sequential manner, allowing the model to incorporate multiple edits across the batch.
 
 ## 📊 Evaluation
 
