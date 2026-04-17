@@ -122,4 +122,4 @@ We adopt a unified evaluation protocol:
 # 📊 Visualization
 
 Example：
-![Framework](assets/framework.png)
+![Framework](asset/framework.jpg)
