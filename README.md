@@ -48,3 +48,75 @@
 实现统一评测指标，在不同任务与数据协议下进行可靠性（Reliability）、泛化（Generalization）、局部性（Locality）、效率（Efficiency）等指标计算。
 
 ---
+
+
+## ⚙️ Environment Setup
+
+We recommend using `conda` for environment management.
+
+### 1. Create Environment
+
+```bash
+conda create -n keplatform python=3.10
+conda activate keplatform
+
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3. Install Core Libraries
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install transformers datasets accelerate
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourname/KnowledgeEditPlatform.git
+cd KnowledgeEditPlatform
+pip install -e .
+
+
+
+
+
+# 🧠 Task Definition
+
+```markdown
+## 🧠 Task Definition
+
+Given a pretrained model $f_\theta$, knowledge editing aims to modify its behavior on specific edit pairs $(x_e, y_e)$:
+
+- $x_e$: input prompt  
+- $y_e$: target output  
+
+while preserving performance on unrelated inputs.
+
+### Editing Settings
+
+- **Single Editing**: apply one edit independently  
+- **Batch Editing**: apply multiple edits simultaneously  
+- **Sequential Editing**: continuous updates on the same model 
+
+## 📊 Evaluation
+
+We adopt a unified evaluation protocol:
+
+- **Reliability**: success rate on edited knowledge  
+- **Generalization**: performance on paraphrased inputs  
+- **Locality**: impact on unrelated knowledge  
+- **Efficiency**: time and memory cost  
+
+### Output Format
+
+```json
+{
+  "post": {
+    "reliability": 0.92,
+    "generalization": 0.88,
+    "locality": 0.97
+  }
+}
+
+# 📊 Visualization
+
+Example：
+<img width="1034" height="570" alt="image" src="https://github.com/user-attachments/assets/eef4dff4-5184-4af9-be31-385d3dea1235" />
