@@ -59,12 +59,13 @@ We recommend using `conda` for environment management.
 ```bash
 conda create -n keplatform python=3.10
 conda activate keplatform
-```bash
 
 ### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
 
 ### 3. Install Core Libraries
+```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install transformers datasets accelerate
 
